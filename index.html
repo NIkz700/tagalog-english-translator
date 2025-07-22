@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Tagalog-English Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🔃 Running Text -->
+  <div class="marquee">📌 Developed by Niko Sedan | Powered by LibreTranslate API | Source: GitHub</div>
+
+  <div class="container">
+    <h1>Translator 🇵🇭↔🇺🇸</h1>
+    <select id="langSelect">
+      <option value="tl-en">Tagalog ➜ English</option>
+      <option value="en-tl">English ➜ Tagalog</option>
+    </select>
+    <textarea id="inputText" placeholder="Enter your text..."></textarea>
+    <button onclick="translate()">Translate</button>
+    <textarea id="outputText" placeholder="Translation result..." readonly></textarea>
+  </div>
+
+  <!-- 📃 About Section -->
+  <footer class="footer">
+    📄 This web app helps you translate between Tagalog and English instantly using LibreTranslate.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
