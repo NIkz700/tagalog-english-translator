@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+h1 {
+  text-align: center;
+  color: #2a9d8f;
+  margin-bottom: 16px;
+}
+select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+textarea {
+  resize: none;
+  height: 120px;
+}
+button {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #23897b;
+}
+
+/* 🔃 Marquee Running Text */
+.marquee {
+  width: 100%;
+  background: #2a9d8f;
+  color: white;
+  padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(-100%); }
+}
+
+/* 📃 Footer About */
+.footer {
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  color: #666;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
